@@ -18,6 +18,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ["Inter", "system-ui", "sans-serif"],
+        serif: ["Lora", "Georgia", "serif"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -62,6 +66,31 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // eBook specific colors
+        brand: {
+          50: "hsl(var(--brand-50))",
+          100: "hsl(var(--brand-100))",
+          200: "hsl(var(--brand-200))",
+          300: "hsl(var(--brand-300))",
+          400: "hsl(var(--brand-400))",
+          500: "hsl(var(--brand-500))",
+          600: "hsl(var(--brand-600))",
+          700: "hsl(var(--brand-700))",
+          800: "hsl(var(--brand-800))",
+          900: "hsl(var(--brand-900))",
+        },
+        warm: {
+          50: "hsl(var(--warm-50))",
+          100: "hsl(var(--warm-100))",
+          200: "hsl(var(--warm-200))",
+          300: "hsl(var(--warm-300))",
+          400: "hsl(var(--warm-400))",
+          500: "hsl(var(--warm-500))",
+          600: "hsl(var(--warm-600))",
+          700: "hsl(var(--warm-700))",
+          800: "hsl(var(--warm-800))",
+          900: "hsl(var(--warm-900))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -85,10 +114,30 @@ export default {
             height: "0",
           },
         },
+        "fade-up": {
+          from: {
+            opacity: "0",
+            transform: "translateY(30px)",
+          },
+          to: {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
+        "fade-in": {
+          from: {
+            opacity: "0",
+          },
+          to: {
+            opacity: "1",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "fade-up": "fade-up 0.5s ease-out",
+        "fade-in": "fade-in 0.3s ease-out",
       },
     },
   },
