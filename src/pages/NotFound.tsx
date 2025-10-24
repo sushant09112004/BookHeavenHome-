@@ -19,6 +19,8 @@ const NotFound = () => {
               <BookOpen className="w-8 h-8 text-brand-500" />
               <h2 className="text-2xl font-serif font-semibold">
                 Page Not Found
+
+                
               </h2>
             </div>
             <p className="text-muted-foreground leading-relaxed">
